@@ -337,9 +337,9 @@ ubuntu_16 () {
        mysql -uroot -p${rootpasswd} -e "FLUSH PRIVILEGES;"
 
 
-   curl -LO https://download.nextcloud.com/server/releases/nextcloud-13.0.1.zip
+   curl -LO https://download.nextcloud.com/server/releases/nextcloud-21.0.2.zip
 
-   unzip nextcloud-13.0.1.zip -d /var/www/html/
+   unzip nextcloud-21.0.2.zip -d /var/www/html/
    chown -R www-data:www-data /var/www/html/nextcloud/
 
    cd /etc/apache2/sites-available && curl -LO https://raw.githubusercontent.com/RedxLus/Nextcloud-Script/master/Files/nextcloud.conf
